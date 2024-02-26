@@ -119,19 +119,6 @@ endif()
 
 add_subdirectory(src)
 
-# Tests
-
-# BUILD_TESTING is declared by CTest module and is ON by default
-if(BUILD_TESTING)
-  add_subdirectory(tests)
-endif()
-
-# Examples
-
-if(LIBSAMPLERATE_EXAMPLES)
-  add_subdirectory(examples)
-endif()
-
 configure_file(config.h.cmake config.h)
 
 if(LIBSAMPLERATE_INSTALL)
